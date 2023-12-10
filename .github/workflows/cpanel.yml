@@ -26,10 +26,6 @@ jobs:
           server-dir: ./
 
       - name: Install Dependencies
-        run: composer update --ignore-platform-reqs
-        working-directory: ./php
-
-      - name: Migrate Database
-        run: php artisan migrate
+        run: composer install --ignore-platform-reqs
         working-directory: ./php
       
