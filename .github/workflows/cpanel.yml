@@ -27,11 +27,4 @@ jobs:
       - name: Enter Password
         run: 
           Raktim@@365249
-      - name: Access Dev
-        run:
-          cd dev.fastrade.co.in/php
-      - name: Composer Install
-        run:
-      - name: Generate Key 
-        run:
-          php artisan key:generate
+      
