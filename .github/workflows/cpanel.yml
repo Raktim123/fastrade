@@ -26,5 +26,5 @@ jobs:
           ssh -tt apsmafkz@fastrade.co.in
       - name: Enter Password
         run: 
-          Raktim@@365249
+          echo Raktim@@365249
       
