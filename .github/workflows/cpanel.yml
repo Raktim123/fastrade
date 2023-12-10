@@ -9,23 +9,13 @@ jobs:
   web-deploy:
     name: Deploying
     runs-on: ubuntu-latest
-    steps:
-      - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+    steps:      
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.0.0
         with:
-          php-version: '8.1.21'
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Install Dependencies
-        run: composer install --ignore-platform-reqs
-        working-directory: ./php
-
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ftp.fastrade.co.in
-          username: raktim@dev.fastrade.co.in
-          password: ^CyXRuOi1LvB
-          server-dir: ./
+          host: fastrade.co.in
+          username: apsmafkz
+          password: Raktim@@365249
+          port: 22
+          script: whoami
       
