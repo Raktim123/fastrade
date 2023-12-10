@@ -15,12 +15,7 @@ jobs:
           php-version: '8.1.21'
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Change Directory
-        run: cd php
-      - name: Install Dependencies
-        run: composer update --ignore-platform-reqs
-      - name: Generate key
-        run: php artisan key:generate
+
       # Runs a single command using the runners shell
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
@@ -29,4 +24,12 @@ jobs:
           username: raktim@dev.fastrade.co.in
           password: ^CyXRuOi1LvB
           server-dir: ./
+
+      - name: Install Dependencies
+        run: composer update --ignore-platform-reqs
+        working-directory: ./php
+
+      - name: Generate key
+        run: php artisan key:generate
+        working-directory: ./php
       
