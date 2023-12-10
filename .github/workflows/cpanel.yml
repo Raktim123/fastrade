@@ -21,9 +21,17 @@ jobs:
           username: raktim@dev.fastrade.co.in
           password: ^CyXRuOi1LvB
           server-dir: ./
-      - name: Install Laravel
+      - name: Access Terminal
         run: 
           ssh apsmafkz@fastrade.co.in
+      - name: Enter Password
+        run: 
           Raktim@@365249
-          composer install
+      - name: Access Dev
+        run:
+          cd dev.fastrade.co.in/php
+      - name: Composer Install
+        run:
+      - name: Generate Key 
+        run:
           php artisan key:generate
