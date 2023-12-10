@@ -14,8 +14,8 @@ jobs:
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: fastrade.co.in
-          username: apsmafkz@fastrade.co.in
-          password: Raktim@@365249
+          username: apsmafkz
+          key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdyUTpO/tXqELstSLYUG+ZsNNOHB7VP+RSvC7IwHrRKRT73ciof+b9m6Z/PaqD9LvNKLafoOgNsoKDe1hnRTL3arN6YRa2jqD4cq3lcV/J+e71TmkwtJbl+Jrise00ZW6shUqpm0EORiOzxgKpFZIahZwUBDCqxMKv2ThTXtO6B2Jq4uzWsvarkUrgYSyNestbq4rPtiyy+SE4dSL4oGw7WUNzyRYTiDO5GRAMWK8nlqhdTGwbLbIiPfDSB5kWxmFcqsTHzMddgj1xxlQoXk4w5r5ZnJIt/QppcZwFwjLA0bgEJ928Yq82RRQBDMdpnDSafDLNnjI7tLCwu6tH9No1
           port: 22
           script: |
             cd php
