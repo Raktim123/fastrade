@@ -20,4 +20,4 @@ jobs:
           server: ftp.fastrade.co.in
           username: raktim@dev.fastrade.co.in
           password: ^CyXRuOi1LvB
-          server-dir: /home4/apsmafkz/dev.fastrade.co.in/
+          server-dir: ./
