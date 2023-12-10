@@ -17,5 +17,5 @@ jobs:
           username: apsmafkz
           password: Raktim@@365249
           port: 22
-          script: whoami
+          script: ls
       
