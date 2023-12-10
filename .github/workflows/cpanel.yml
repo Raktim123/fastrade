@@ -15,7 +15,7 @@ jobs:
         with:
           host: fastrade.co.in
           username: apsmafkz
-          password: Raktim@@365249
+          key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZTYL1dpQpArUkqjKA9Lf7F+Gr25LTnoo0Uq6IEofzHb0HSx4FTU/zleWn0YFPr3d0PW4yk1rhpk8Oeh+L6t3jMQwkcj9fTSiSkXgTwaeWl8jd7MB+SHhtRnoar7PxMyb+n6thHGw9NF90QCUqM0gH0p5k2H0KTF73c8IZEASvvd9gXR36Lf1fC+6u19V41pjBF6xVNF6kkfyQ0my00WlisM8Iar1M9LyIQRWxGgL0OIACJ5MKMAklX8J6fV0ptVDSPvKrDBnxR+VUKIGelgQrrGkh+teLD9GslLZ5duT5uqrPcqtwAdFCyS1gC4SkNp3i/b5nnQWwsn5rmLFV+SB/
           port: 22
           script: whoami
       
